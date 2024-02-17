@@ -3,15 +3,16 @@
  */
 
 function setup() {
-  createCanvas(640, 240);
-  textFont("Arial");
+  createCanvas(600, 240);
+  textFont("Comic Sans");
 }
 
 function draw() {
   background(200);
-  textSize(16);
-  text("one small step for a man ...", 20, 60);
-  textSize(32);
-  text("one giant leap for mankind.", 20, 160);
-
+  if(mouseIsPressed){
+  textSize(20);
+  text("Its as easy as 01 10 11.", 20, 140);}
+  else {
+    textSize(30);
+    text("How easy is it to count in binary code?", 20, 140);}
 }
